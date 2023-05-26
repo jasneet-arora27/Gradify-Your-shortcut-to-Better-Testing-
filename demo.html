@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="demo.css">
 
   </head>
+  <body>
 <header>
   	<div class="container">
     <nav>
@@ -38,10 +39,12 @@
   </div>
     
   </header>
-  <body>
     <!-- partial:index.partial.html -->
 	<section>
+    
     <div class="quiz-container" id="quiz">
+      <div id="timer" style="text-align: center; font-size:24px;">0:00</div>
+
 
       <div class="quiz-header">
         <h2 id="question">Question is loading...</h2>
@@ -66,17 +69,17 @@
         </ul>
       </div>
 
-      <button id="submit">Submit</button>
+      <button id="submit" >Next</button>
+      <button id="stop" onclick="stopCountdown()">Pause</button>
+      
     </div>
-	</section>
-    <!-- partial -->
-    
 
-  </html>
-  <!-- partial -->
+	</section>
+   
   <script src="js/demo.js"></script>
 <footer>
       <p>&copy; 2023 Gradify</p>
+      
     </footer>
 </body>
 

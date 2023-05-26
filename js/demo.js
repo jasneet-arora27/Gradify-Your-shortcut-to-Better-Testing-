@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 const quizData = [
   {
     question: "Which language runs in a web browser?",
@@ -83,3 +95,47 @@ submitButton.addEventListener("click", () => {
     }
   }
 });
+
+
+
+
+
+
+
+ 
+    // The data/time we want to countdown to
+    var countdownInterval;
+
+function countdown(minutes) {
+  var seconds = 60;
+  var mins = minutes;
+
+  function tick() {
+    var counter = document.getElementById("timer");
+    var currentMinutes = mins - 1;
+    seconds--;
+    counter.innerHTML =
+      currentMinutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+    if (seconds > 0) {
+      countdownInterval = setTimeout(tick, 1000);
+    } else {
+      if (mins > 1) {
+        countdown(mins - 1);
+      }
+    }
+  }
+
+  tick();
+}
+
+    function stopCountdown(minutes) {
+      clearTimeout(countdownInterval);
+      
+    }
+
+
+
+
+    countdown(5);
+
+

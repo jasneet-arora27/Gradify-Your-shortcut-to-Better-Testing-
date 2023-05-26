@@ -1,0 +1,187 @@
+/* Basic styles */
+body {
+    background-color: #7F7FD5;
+    background-image: linear-gradient(45deg,#7F7FD5,#91EAE4);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+ body {
+    margin: 0px;
+}
+body,
+button,
+input {
+
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+li.active a {
+    text-decoration: underline;
+    color: #8ccee0;
+}
+/* Styles for the navigation bar */
+.logo
+{
+    width: 100px;
+}
+header {
+    background-color: #333;
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
+	padding-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.col-7 {
+    width: 65%;
+}
+.col-5 {
+    width: 35%;
+}
+h2 {
+    font-size: 30px;
+}
+.col-5 .image {
+    width: 400px;
+    margin-left: auto;
+}
+section.image .container {
+    flex-direction: row;
+}
+  /* Content section styles */
+  .content {
+    padding: 70px 0px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: #7b339b;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+}
+section.light {
+    background-color: #fff;
+}
+  .content p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+section{padding:70px 0px;}
+  /* Main content styles */
+  .main-content {
+    margin-top: 70px;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    background-color: #303030;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #c9c9c9;
+    color: #303030;
+  }
+  
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+  
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+  
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  /* SVG path animation */
+    .morph-svg {
+      display: inline-block;
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .morph-path {
+      fill: none;
+      stroke: #000;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: morph 10s infinite linear;
+    }
+
+    @keyframes morph {
+      0% {
+        stroke-dashoffset: 1000;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }

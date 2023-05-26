@@ -1,0 +1,155 @@
+/* Basic styles */
+body {
+  background-color: #7F7FD5;
+  background-image: linear-gradient(45deg, #7F7FD5, #91EAE4);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0px;
+}
+body,
+button,
+input {
+  
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+li.active a {
+    text-decoration: underline;
+    color: #8ccee0;
+}
+/* Styles for the navigation bar */
+.logo
+{
+    width: 100px;
+}
+header {
+    background-color: #333;
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 100px;
+	padding-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.col-7 {
+    width: 65%;
+}
+.col-5 {
+    width: 35%;
+}
+.col-5 .image {
+    width: 400px;
+    margin-left: auto;
+}
+h2 {
+    font-size: 30px;
+}
+section.image .container {
+    flex-direction: row;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+/* Styles for the content sections */
+.content {
+  padding: 70px 0px;
+}
+section.light {
+    background-color: #fff;
+}
+.content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.content ul {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+footer p {
+  margin: 0;
+}
+
+/* SVG path animation */
+    .morph-svg {
+      display: inline-block;
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .morph-path {
+      fill: none;
+      stroke: #000;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: morph 10s infinite linear;
+    }
+
+    @keyframes morph {
+      0% {
+        stroke-dashoffset: 1000;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }

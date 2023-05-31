@@ -185,3 +185,27 @@ footer {
 footer p {
   margin: 0;
 }
+
+.morph-svg {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.morph-path {
+  fill: none;
+  stroke: #000;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: morph 10s infinite linear;
+}
+
+@keyframes morph {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
